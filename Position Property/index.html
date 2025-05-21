@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Position Property</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .image2{
+            position: relative;
+            top: 100px;
+            /* position: absolute; */
+        }
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: beige;
+
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            height: 5000px;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <img src="img1.jpg"
+         alt="img1"
+         width="300px"
+         height="300px"
+         class="image1"
+         >
+         <img src="img2.jpg"
+         alt="img2"
+         width="300px"
+         height="300px"
+         class="image2"
+         >
+         <img src="img3.jpg"
+         alt="img3"
+         width="300px"
+         height="300px"
+         class="image3"
+         >
+         <img src="img4.jpg"
+         alt="img4"
+         width="300px"
+         height="300px"
+         class="image4"
+         >
 
+    </div>
+
+    <div class="box">
+
+    </div>
+
+    <ul>
+        <li>using relative position property element can be moved in the current window</li>
+
+    </ul>
     
 
     
