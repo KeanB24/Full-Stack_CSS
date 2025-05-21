@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display Properties</title>
+    <style>
+        /* div{
+            border: solid red 2px;
+            border-radius: 5px;
+            width: 100px;
+            padding: 200px;
+            margin: 300px;
+        } */
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+         }
+         .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 100px;
+         }
+         span{
+            border: 5px solid green;
+            width: 800px;
+            height: 400px;
+            margin: 10px;
+            padding: 10px;
+            /* convert span to block */
+            display: block;
+         }
+    </style>
 </head>
 <body>
+
+    <!-- Display properties of block elements -->
+     <p>Block element Properties
+        <ul>
+            <li>They always come on new line </li>
+            <li>They take extreme width left-right of the viewport by default</li>
+            <li>They can take custom width or height</li>
+            <li>They can take custom padding/margin</li>
+        </ul>
+    </p>
+    
+    <div>Welcome to Code Learn!</div>
+    <div>Welcome to Code Learn v2.0!</div>
+
+    <!-- Box sizing Border Box -->
+
+    <div class="box">Welcome to Code Learn New!!</div>
+
+    <p>Examples of Inline elements(a, span)
+        <ul>
+            <li>They always come on same line if width is available</li>
+            <li>custom width and height can't be applied</li>
+            <li>horizontal margin can be applied only</li>
+            <li>padding is applied</li>
+        </ul>
+    </p>
+
+
+    <span>This is Neel Bose</span>
+    <span>This is his CSS Exercise</span>
+
+
+
+
+
+    
+
+
     
 </body>
 </html>
