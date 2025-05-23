@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+    <style>
+        /* defining custom variables in Root element for universal access */
+        :root{
+            --var-width: 500px;
+            --var-heigth: 500px;
+        }
+        .container{
+            background-color: beige;
+            border: 1px solid black;
+            height: 650px;
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        .box{
+            /* custom variable */
+            --primary-color: brown;
+            background-color: aqua;
+            height: var(--var-heigth);
+            width: var(--var-width);
+            border: 5px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+            /* x-offset, y-offset, blur radius, spread radius inset*/
+            /* box-shadow: 10px 15px brown; */
+            /* box-shadow: -10px 20px green; */
+            /* overflow: auto; */
+            /* box-shadow: 10px 15px 20px brown;
+             */
+            /* box-shadow: inset 10px 15px 20px 40px brown; */
+            /* multiple shadows */
+            box-shadow: 10px 15px red, 12px 25px yellow;
+
+        }
+        #head1{
+            /* text-shadow: 2px 3px blueviolet; */
+            text-shadow: 12px 12px 3px blueviolet, 15px 20px 5px orange; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo_sample.jpg" alt="log">
+            <h2 id="head1">This is a logo</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quaerat debitis natus numquam dolorem ad aliquam nostrum illum in voluptatem repellat possimus, quo soluta accusantium sapiente nam praesentium, aliquid officiis!</p> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, dignissimos?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
